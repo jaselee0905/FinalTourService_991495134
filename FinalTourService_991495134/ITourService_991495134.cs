@@ -13,5 +13,9 @@ namespace FinalTourService_991495134
     {
         [OperationContract]
         void DoWork();
+
+        string AuthenticateUser();
+
+        void DBOperations();
     }
 }
