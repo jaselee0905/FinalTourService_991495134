@@ -33,6 +33,8 @@ namespace FinalTourService_991495134
             if (!String.IsNullOrEmpty(dest))
             {
                 user.Destination = dest;
+                context.Users.Add(user);
+                context.SaveChanges();
                 return "Record Inserted";
             }
             else

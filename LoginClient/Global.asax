@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="LoginClient.Global_asax" Language="vb" %>
+﻿<%@ Application Codebehind="Global.asax.vb" Inherits="LoginClient.MvcApplication" Language="VB" %>
