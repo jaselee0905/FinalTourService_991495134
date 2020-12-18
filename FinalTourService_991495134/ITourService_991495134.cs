@@ -13,9 +13,21 @@ namespace FinalTourService_991495134
     {
         [OperationContract]
         void DoWork();
+    }
 
-        string AuthenticateUser();
+    [ServiceContract]
+    public interface IAuthenticateUser
+    {
+        [OperationContract]
+        string Authenticate(string name, string pass);
+    }
 
-        void DBOperations();
+    [ServiceContract]
+    public interface IDBOperations
+    {
+        [OperationContract]
+        string InsertATour(string dest);
+
+        List<User> RetrieveTourInfo();
     }
 }
